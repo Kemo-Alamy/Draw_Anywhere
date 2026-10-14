@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbarRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/toolbar_bg"
+    android:padding="8dp"
+    android:elevation="8dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/btnHide"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_view"
+        android:contentDescription="Hide/Show" />
+
+    <ImageView
+        android:id="@+id/btnUndo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_revert"
+        android:contentDescription="Undo" />
+
+    <ImageView
+        android:id="@+id/btnClear"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_delete"
+        android:contentDescription="Clear" />
+
+    <ImageView
+        android:id="@+id/btnImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:contentDescription="Add Image" />
+
+    <ImageView
+        android:id="@+id/btnTools"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:contentDescription="Pen Tools" />
+
+    <ImageView
+        android:id="@+id/btnColor"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_manage"
+        android:contentDescription="Color & Palette" />
+
+    <ImageView
+        android:id="@+id/btnSettings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_preferences"
+        android:contentDescription="Settings" />
+
+</LinearLayout>
