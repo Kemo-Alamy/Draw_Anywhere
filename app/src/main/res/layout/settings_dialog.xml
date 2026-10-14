@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <Switch
+        android:id="@+id/switchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Horizontal Toolbar Layout"
+        android:textSize="16sp"
+        android:paddingBottom="12dp" />
+
+    <CheckBox
+        android:id="@+id/chkClearOnHide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear canvas on hide"
+        android:textSize="16sp"
+        android:paddingBottom="12dp" />
+
+    <CheckBox
+        android:id="@+id/chkTouchRouting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable Finger Drawing"
+        android:checked="true"
+        android:textSize="16sp"
+        android:paddingBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnQuitService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quit &amp; Exit Service"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
