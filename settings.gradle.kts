@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "DrawAnywhere"
+rootProject.name = "Draw_Anywhere"
 include(":app")
