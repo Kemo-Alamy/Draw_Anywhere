@@ -198,8 +198,8 @@ class OverlayService : Service() {
     }
 
     private fun saveCurrentToolMemory() {
-      toolColors[drawingView.activeTool] = drawingView.currentColor
-      toolWidths[drawingView.activeTool] = drawingView.currentStrokeWidth
+        toolColors[drawingView.activeTool] = drawingView.currentColor
+        toolWidths[drawingView.activeTool] = drawingView.currentStrokeWidth
     }
 
     private fun loadCurrentToolMemory() {
