@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floating_toolbar_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center"
+    android:background="@drawable/toolbar_background"
+    android:elevation="8dp">
+
+    <ImageButton
+        android:id="@+id/btn_toggle_visibility"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_eye"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Toggle visibility"
+        android:tint="@android:color/white"
+        android:padding="6dp" />
+
+    <ImageButton
+        android:id="@+id/btn_undo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_undo"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Undo"
+        android:tint="@android:color/white"
+        android:padding="6dp" />
+
+    <ImageButton
+        android:id="@+id/btn_clear"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_trash"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Clear"
+        android:tint="@android:color/white"
+        android:padding="6dp" />
+
+    <ImageButton
+        android:id="@+id/btn_image_overlay"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_image"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Image overlay"
+        android:tint="@android:color/white"
+        android:padding="6dp" />
+
+    <ImageButton
+        android:id="@+id/btn_pen_switch"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_brush"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Pen switch"
+        android:tint="@android:color/white"
+        android:padding="6dp" />
+
+    <ImageButton
+        android:id="@+id/btn_color_picker"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_palette"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Color picker"
+        android:tint="@android:color/white"
+        android:padding="6dp" />
+
+    <ImageButton
+        android:id="@+id/btn_settings_exit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_settings"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Settings / Exit"
+        android:tint="@android:color/white"
+        android:padding="6dp" />
+
+</LinearLayout>
