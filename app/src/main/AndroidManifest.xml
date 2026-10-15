@@ -28,8 +28,7 @@
             android:name=".OverlayService"
             android:enabled="true"
             android:exported="false"
-            android:foregroundServiceType="specialUse"
-            tools:targetName="S">
+            android:foregroundServiceType="specialUse">
             <property
                 android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
                 android:value="Screen overlay drawing tools" />
