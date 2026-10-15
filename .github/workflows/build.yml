@@ -3,8 +3,6 @@ name: Build Android APK
 on:
   push:
     branches: [ "main", "master" ]
-  pull_request:
-    branches: [ "main", "master" ]
   workflow_dispatch:
 
 jobs:
@@ -23,9 +21,11 @@ jobs:
 
       - name: Setup Gradle Environment
         uses: gradle/actions/setup-gradle@v3
+        with:
+          cache-read-only: true
 
       - name: Build Debug APK with Gradle
-        run: gradle :app:assembleDebug
+        run: ./gradlew :app:assembleDebug --no-daemon
 
       - name: Upload Output APK Artifact
         uses: actions/upload-artifact@v4
