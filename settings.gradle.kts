@@ -1,7 +1,7 @@
 pluginManagement {
     repositories {
         google()
-        mavenCent[span_34](start_span)[span_34](end_span)[span_42](start_span)[span_42](end_span)ral()
+        mavenCentral()
         gradlePluginPortal()
     }
 }
