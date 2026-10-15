@@ -21,12 +21,8 @@ jobs:
 
       - name: Setup Gradle Environment
         uses: gradle/actions/setup-gradle@v3
-        with:
-          # pin to the Gradle runtime you want CI to use (match your wrapper/compatibility)
-          gradle-version: '9.8.1'
 
       - name: Build Debug APK with Gradle
-        # Use the system-installed Gradle (provided by gradle/actions/setup-gradle)
         run: gradle :app:assembleDebug
 
       - name: Upload Output APK Artifact
