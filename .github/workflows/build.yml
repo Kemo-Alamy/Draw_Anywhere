@@ -21,6 +21,8 @@ jobs:
 
       - name: Setup Gradle Environment
         uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.2'
 
       - name: Build Debug APK with Gradle
         run: gradle :app:assembleDebug --stacktrace
