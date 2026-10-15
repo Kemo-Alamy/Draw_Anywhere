@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.kemo.drawanywhere"
+    namespace = "com.example.drawanywhere"
     compileSdk = 34
 
     defaultConfig {
