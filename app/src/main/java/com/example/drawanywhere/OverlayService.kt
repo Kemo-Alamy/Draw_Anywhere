@@ -161,6 +161,9 @@ class OverlayService : Service() {
                     // noop: already started onCreate
                 }
                 ACTION_REQUEST_IMAGE_PICK -> requestImagePick()
+                else -> {
+                    // Handle unknown or null action safely
+                }
             }
         }
         return START_STICKY
