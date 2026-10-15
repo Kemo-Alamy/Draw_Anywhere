@@ -49,6 +49,7 @@ class DrawingView(context: Context) : View(context) {
         }
 
     var isFingerDrawingEnabled: Boolean = true
+
     var overlayBitmap: Bitmap? = null
     private var imageMatrix = Matrix()
 
@@ -83,6 +84,7 @@ class DrawingView(context: Context) : View(context) {
                 currentPaint.style = Paint.Style.STROKE
                 currentPaint.strokeWidth = currentStrokeWidth * 3f
                 currentPaint.alpha = (255 * 0.35).toInt()
+                currentPaint.xfermode = null
             }
             PenToolType.STROKE_ERASER -> {
                 currentPaint.style = Paint.Style.STROKE
