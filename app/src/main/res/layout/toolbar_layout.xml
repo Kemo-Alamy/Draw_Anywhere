@@ -34,14 +34,6 @@
         android:contentDescription="Clear" />
 
     <ImageView
-        android:id="@+id/btnImage"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:padding="8dp"
-        android:src="@android:drawable/ic_menu_gallery"
-        android:contentDescription="Add Image" />
-
-    <ImageView
         android:id="@+id/btnTools"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -55,7 +47,7 @@
         android:layout_height="40dp"
         android:padding="8dp"
         android:src="@android:drawable/ic_menu_manage"
-        android:contentDescription="Color & Palette" />
+        android:contentDescription="Color &amp; Palette" />
 
     <ImageView
         android:id="@+id/btnSettings"
