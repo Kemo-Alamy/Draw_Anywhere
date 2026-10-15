@@ -21,11 +21,9 @@ jobs:
 
       - name: Setup Gradle Environment
         uses: gradle/actions/setup-gradle@v3
-        with:
-          cache-read-only: true
 
       - name: Build Debug APK with Gradle
-        run: ./gradlew :app:assembleDebug --no-daemon
+        run: gradle :app:assembleDebug
 
       - name: Upload Output APK Artifact
         uses: actions/upload-artifact@v4
