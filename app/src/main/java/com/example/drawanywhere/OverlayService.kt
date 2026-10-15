@@ -225,13 +225,13 @@ class OverlayService : Service() {
 
         dialog.window?.setType(WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY)
 
-        layoutSwitch.setOnCheckedChangeListener { _, isChecked ->
+        layoutSwitch.setOnCheckedChangeListener { _: android.widget.CompoundButton, isChecked: Boolean ->
             isHorizontalLayout = isChecked
             val root = toolbarView.findViewById<LinearLayout>(R.id.toolbarRoot)
             root.orientation = if (isChecked) LinearLayout.HORIZONTAL else LinearLayout.VERTICAL
         }
-        clearHideCheck.setOnCheckedChangeListener { _, isChecked -> clearOnHide = isChecked }
-        touchRoutingCheck.setOnCheckedChangeListener { _, isChecked ->
+        clearHideCheck.setOnCheckedChangeListener { _: android.widget.CompoundButton, isChecked: Boolean -> clearOnHide = isChecked }
+        touchRoutingCheck.setOnCheckedChangeListener { _: android.widget.CompoundButton, isChecked: Boolean ->
             drawingView.isFingerDrawingEnabled = isChecked
             val drawingParams = drawingView.layoutParams as WindowManager.LayoutParams
             if (isChecked) {
