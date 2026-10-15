@@ -11,6 +11,7 @@ import android.os.Looper
 import android.view.*
 import android.widget.*
 import androidx.core.app.NotificationCompat
+import com.example.drawanywhere.R
 
 class OverlayService : Service() {
 
